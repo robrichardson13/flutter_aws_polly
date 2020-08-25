@@ -1,5 +1,5 @@
 name: aws_polly
-version: 1.0.0
+version: 1.0.1
 description: A simple, unofficial AWS Polly client in dart.
 repository: https://github.com/robrichardson13/flutter_aws_polly
 

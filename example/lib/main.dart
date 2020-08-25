@@ -13,8 +13,7 @@ class _MyAppState extends State<MyApp> {
   String _url;
 
   final AwsPolly _awsPolly = AwsPolly.instance(
-    // poolId: 'us-east-1:xxxx-xxx-xxxxx',
-    poolId: 'us-east-1:fc40dd32-3363-40eb-9669-39ebc197f8b0',
+    poolId: 'us-east-1:xxxx-xxx-xxxxx',
     region: AWSRegionType.USEast1,
   );
 
