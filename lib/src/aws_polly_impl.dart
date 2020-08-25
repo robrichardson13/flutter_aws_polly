@@ -10,6 +10,7 @@ class _MethodCalls {
 
 class AwsPollyImpl implements AwsPolly {
   static const MethodChannel _channel = const MethodChannel('aws_polly');
+
   /// The string of the Identity Pool.
   final String poolId;
 

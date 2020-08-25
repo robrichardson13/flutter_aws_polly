@@ -1,3 +1,7 @@
+## [1.0.3] 24th August 2020
+
+* Added formatting in to fix score
+
 ## [1.0.2] 24th August 2020
 
 * Added more comments
