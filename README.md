@@ -14,6 +14,8 @@ dependencies:
 
 ### AWS Console
 
+Here are the steps to generate a functional `Pool ID` in the AWS Console
+
 1. You must have first have an account with [AWS](https://aws.amazon.com/).
 2. Go to the [Amazon Cognito](https://console.aws.amazon.com/cognito) console.
 3. Click on `Manage Identity Pools` and `Create new identity pool`.
