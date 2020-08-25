@@ -10,39 +10,61 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _url = 'Unknown';
+  String _url;
+
   final AwsPolly _awsPolly = AwsPolly.instance(
-    poolId: 'us-east-1:ed12259f-71b9-4e14-97fb-cf9983d326d4',
+    // poolId: 'us-east-1:xxxx-xxx-xxxxx',
+    poolId: 'us-east-1:fc40dd32-3363-40eb-9669-39ebc197f8b0',
     region: AWSRegionType.USEast1,
   );
 
-  void onPlay() async {
+  void onLoadUrl() async {
+    setState(() => _url = null);
     final url = await _awsPolly.getUrl(
       voiceId: AWSPolyVoiceId.nicole,
-      input: 'Rob Richardson is super cool',
+      input: 'This is a sample text playing through Poly!',
     );
     setState(() => _url = url);
-    final player = AudioPlayer();
-    await player.setUrl(url);
-    player.play();
   }
 
-//TODO, add functionality to generate the URL + play the url separately
+  void onPlay() async {
+    if (_url == null) return;
+    final player = AudioPlayer();
+    await player.setUrl(_url);
+    player.play();
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Flutter AWS Polly'),
         ),
-        body: Center(
-          child: ListView(
-            children: <Widget>[
-              // Text('Url: $_url'),
-              FlatButton(
-                child: Text('Play'),
+        body: SafeArea(
+          child: Column(
+            children: [
+              SizedBox(height: 8),
+              RaisedButton(
+                child: Text('Load URL'),
+                onPressed: onLoadUrl,
+              ),
+              RaisedButton(
+                child: Text('Play URL'),
                 onPressed: onPlay,
+              ),
+              SizedBox(height: 8),
+              Container(
+                height: 1,
+                color: Theme.of(context).primaryColor,
+              ),
+              Expanded(
+                child: ListView(
+                  padding: const EdgeInsets.all(8),
+                  children: <Widget>[
+                    Text('URL: $_url'),
+                  ],
+                ),
               ),
             ],
           ),

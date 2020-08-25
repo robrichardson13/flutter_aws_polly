@@ -1,6 +1,5 @@
 import Flutter
 import UIKit
-//import AWSCore
 import AWSMobileClient
 import AWSPolly
 

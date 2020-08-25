@@ -7,13 +7,13 @@ import 'models/aws_poly_voice_id.dart';
 abstract class AwsPolly {
   Future<String> getUrl({
     @required String input,
-    @required AWSPolyVoiceId voiceId,
+    AWSPolyVoiceId voiceId,
   });
 
   static AwsPolly _instance;
   static AwsPolly instance({
     @required String poolId,
-    @required AWSRegionType region,
+    AWSRegionType region = AWSRegionType.USEast1,
   }) {
     if (_instance == null) {
       _instance = AwsPollyImpl(

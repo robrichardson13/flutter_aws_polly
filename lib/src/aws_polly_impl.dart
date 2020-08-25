@@ -29,7 +29,10 @@ class AwsPollyImpl implements AwsPolly {
     await _channel.invokeMethod(_MethodCalls.initialize, request);
   }
 
-  Future<String> getUrl({String input, AWSPolyVoiceId voiceId}) async {
+  Future<String> getUrl({
+    String input,
+    AWSPolyVoiceId voiceId = AWSPolyVoiceId.ivy,
+  }) async {
     Map<String, String> request = {
       'input': input,
       'voiceId': voiceId.string,
