@@ -1,0 +1,63 @@
+PODS:
+  - aws_polly (0.0.1):
+    - AWSMobileClient
+    - AWSPolly
+    - Flutter
+  - AWSAuthCore (2.13.4):
+    - AWSCore (= 2.13.4)
+  - AWSCognitoIdentityProvider (2.13.4):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.13.4)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.13.4)
+  - AWSMobileClient (2.13.4):
+    - AWSAuthCore (= 2.13.4)
+    - AWSCognitoIdentityProvider (= 2.13.4)
+  - AWSPolly (2.13.4):
+    - AWSCore (= 2.13.4)
+  - Flutter (1.0.0)
+  - just_audio (0.0.1):
+    - Flutter
+  - path_provider (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - aws_polly (from `.symlinks/plugins/aws_polly/ios`)
+  - Flutter (from `Flutter`)
+  - just_audio (from `.symlinks/plugins/just_audio/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AWSAuthCore
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSMobileClient
+    - AWSPolly
+
+EXTERNAL SOURCES:
+  aws_polly:
+    :path: ".symlinks/plugins/aws_polly/ios"
+  Flutter:
+    :path: Flutter
+  just_audio:
+    :path: ".symlinks/plugins/just_audio/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+
+SPEC CHECKSUMS:
+  aws_polly: 9f95d0e3ee34be8f2f3df76ef39865d561f1a636
+  AWSAuthCore: 72b4bd064c28985ea5345c62759632d511de342a
+  AWSCognitoIdentityProvider: a2d1d2857316519c018c03ac8205cf78154db5c0
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 06beea22b6bdbfe9f5ab5015c6901e8475c746a8
+  AWSMobileClient: 33ecce524fbc011d543dae8306ca29a43ecb72e5
+  AWSPolly: c054eb9c899b072cf485aa6d6fc25f407acc253c
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  just_audio: baa7252489dbcf47a4c7cc9ca663e9661c99aafa
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+
+PODFILE CHECKSUM: a75497545d4391e2d394c3668e20cfb1c2bbd4aa
+
+COCOAPODS: 1.9.3
