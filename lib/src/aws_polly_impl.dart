@@ -10,7 +10,10 @@ class _MethodCalls {
 
 class AwsPollyImpl implements AwsPolly {
   static const MethodChannel _channel = const MethodChannel('aws_polly');
+  /// The string of the Identity Pool.
   final String poolId;
+
+  /// The region of the Identity Pool.
   final AWSRegionType region;
 
   AwsPollyImpl({
@@ -20,6 +23,10 @@ class AwsPollyImpl implements AwsPolly {
     _initialize();
   }
 
+  /// Sets your AWSServiceManager configuration to this [poolId] and [region].
+  ///
+  /// Called once in the [AwsPollyImpl] constructor.
+  ///
   void _initialize() async {
     Map<String, String> request = {
       'poolId': poolId,

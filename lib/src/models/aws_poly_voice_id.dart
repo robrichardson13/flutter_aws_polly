@@ -1,3 +1,5 @@
+/// These Voice Ids match to the AWS Polly Voice Ids.
+///
 enum AWSPolyVoiceId {
   ivy,
   joanna,
@@ -15,7 +17,7 @@ enum AWSPolyVoiceId {
 }
 
 extension AWSPolyVoiceIdExtension on AWSPolyVoiceId {
-  /// Return a string for the given AWSPollyVoiceId
+  /// Return a string for the given AWSPollyVoiceId.
   ///
   String get string => this.toString().split('.').last;
 }

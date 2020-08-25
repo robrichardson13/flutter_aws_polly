@@ -1,3 +1,5 @@
+/// These Region Types match to the AWS Regions.
+///
 enum AWSRegionType {
   USEast1,
   USWest1,
@@ -15,7 +17,7 @@ enum AWSRegionType {
 }
 
 extension AWSRegionTypeExtension on AWSRegionType {
-  /// Return a string for the given AWSRegionType
+  /// Return a string for the given AWSRegionType.
   ///
   String get string {
     switch (this) {
