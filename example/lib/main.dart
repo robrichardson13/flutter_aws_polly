@@ -10,7 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _url;
+  String? _url;
 
   final AwsPolly _awsPolly = AwsPolly.instance(
     poolId: 'us-east-1:xxxx-xxx-xxxxx',
@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
   void onPlay() async {
     if (_url == null) return;
     final player = AudioPlayer();
-    await player.setUrl(_url);
+    await player.setUrl(_url!);
     player.play();
   }
 
@@ -44,11 +44,11 @@ class _MyAppState extends State<MyApp> {
           child: Column(
             children: [
               SizedBox(height: 8),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Load URL'),
                 onPressed: onLoadUrl,
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Play URL'),
                 onPressed: onPlay,
               ),
