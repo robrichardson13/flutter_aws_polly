@@ -18,8 +18,8 @@ class AwsPollyImpl implements AwsPolly {
   final AWSRegionType region;
 
   AwsPollyImpl({
-    this.poolId,
-    this.region,
+    required this.poolId,
+    required this.region,
   }) {
     _initialize();
   }
@@ -38,7 +38,7 @@ class AwsPollyImpl implements AwsPolly {
   }
 
   Future<String> getUrl({
-    String input,
+    required String input,
     AWSPolyVoiceId voiceId = AWSPolyVoiceId.ivy,
   }) async {
     Map<String, String> request = {
