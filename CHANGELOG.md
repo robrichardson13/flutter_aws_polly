@@ -1,3 +1,8 @@
+## [1.0.4] 12th March 2021
+
+* Updated for null safety
+* Updated example app for Flutter 2
+
 ## [1.0.3] 24th August 2020
 
 * Added formatting in to fix score

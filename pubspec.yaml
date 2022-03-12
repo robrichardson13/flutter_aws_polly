@@ -1,11 +1,11 @@
 name: aws_polly
-version: 1.0.3
+version: 1.0.4
 description: A simple, unofficial AWS Polly client in dart. Supports generating a URL given an input text and voice identifier.
 repository: https://github.com/robrichardson13/flutter_aws_polly
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
-  flutter: ">=1.10.0 <2.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
