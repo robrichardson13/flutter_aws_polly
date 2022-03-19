@@ -1,3 +1,8 @@
+## [2.0.0] 19th March 2021
+
+* Added Android implementation
+* NOTE - Android example app may need to be tweaked for audio playback depending on your local Java version
+
 ## [1.0.4] 12th March 2021
 
 * Updated for null safety
