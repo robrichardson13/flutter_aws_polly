@@ -1,3 +1,7 @@
+## [2.1.1] 19th March 2021
+
+* Added documentation for Region and Voice enums
+
 ## [2.1.0] 19th March 2021
 
 * Added Missing voices for iOS
