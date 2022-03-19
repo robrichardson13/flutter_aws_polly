@@ -16,6 +16,8 @@ enum AWSRegionType {
   Unknown,
 }
 
+/// Extension for `AWSRegionType` to add helpers.
+/// 
 extension AWSRegionTypeExtension on AWSRegionType {
   /// Return a string for the given AWSRegionType.
   ///

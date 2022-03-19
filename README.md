@@ -8,7 +8,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  aws_polly: ^2.0.0
+  aws_polly: ^2.1.0
 ```
 
 

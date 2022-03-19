@@ -2,6 +2,27 @@ import 'aws_polly_impl.dart';
 import 'models/aws_region_type.dart';
 import 'models/aws_poly_voice_id.dart';
 
+/// A client used to initialize the instance and generate urls from an input.
+///
+/// Example on how to initialize:
+///
+/// ```dart
+/// final AwsPolly _awsPolly = AwsPolly.instance(
+///   poolId: 'us-east-1:xxxx-xxx-xxxxx',
+///   region: AWSRegionType.USEast1,
+/// );
+/// ```
+///
+/// Example on how to generate a url:
+///
+/// ```dart
+/// final url = await _awsPolly.getUrl(
+///   voiceId: AWSPolyVoiceId.nicole,
+///   input: 'This is a sample text playing through Poly!',
+/// );
+/// ```
+///
+
 abstract class AwsPolly {
   /// Returns a string given the [input] and [voiceId].
   ///
