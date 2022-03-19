@@ -1,3 +1,8 @@
+## [2.1.0] 19th March 2021
+
+* Added Missing voices for iOS
+* Added more documentation
+
 ## [2.0.0] 19th March 2021
 
 * Added Android implementation
